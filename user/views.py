@@ -17,7 +17,7 @@ class RegisterView(generics.CreateAPIView):
         serializer.is_valid(raise_exception=True)
         user = serializer.save()
         return Response({
-            'user': UserSerializer(user).data
+            'user': RegisterSerializer(user).data
         }, status=status.HTTP_201_CREATED)
 
 

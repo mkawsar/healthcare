@@ -5,3 +5,5 @@ __pycache__/
 *.pyo
 *.pyd
 *.pyw
+.DS_Store
+*.sqlite3
